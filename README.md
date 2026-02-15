@@ -50,6 +50,8 @@ Before running the program, you must update the local data path in `src/Similari
 // Modify this line to point to your local dataset directory
 String directoryPath = "C:\\Your\\Path\\To\\Datasets";
 
+---
+
 ## 🔧 Data Pre-processing: Coordinate Conversion
 
 If your dataset contains raw latitude and longitude coordinates, they must be converted into planar (XY) coordinates using **Mercator Projection** before running the search. This ensures accurate spatial normalization and KDE modeling.
