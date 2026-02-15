@@ -6,7 +6,7 @@ This repository contains the code for the paper **"Efficient Cross-Regional Spat
 
 The following figure illustrates the DPSS+ framework, which is bifurcated into an offline processing stage for repository indexing and an online query stage for rapid similarity retrieval.
 
-
+<img width="5584" height="2000" alt="overview" src="https://github.com/user-attachments/assets/dff43429-a30c-477e-a136-6e0613408466" />
 
 
 * **(a) Data Modeling**: Raw spatial points are normalized to mitigate geographic offsets and transformed into continuous probability fields using Kernel Density Estimation (KDE).
