@@ -49,7 +49,3 @@ Before running the program, you must update the local data path in `src/Similari
 ```java
 // Modify this line to point to your local dataset directory
 String directoryPath = "C:\\Your\\Path\\To\\Datasets";
-2. **Set Paths**: Update the `inputDirectoryPath` and `outputDirectoryPath` variables in the `main` method to match your local folders.
-   ```java
-   String inputDirectoryPath = "C:\\path\\to\\your\\latlon_data";
-   String outputDirectoryPath = "C:\\path\\to\\save\\planar_data";
