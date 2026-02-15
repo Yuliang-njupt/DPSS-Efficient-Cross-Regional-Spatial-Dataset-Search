@@ -49,22 +49,6 @@ Before running the program, you must update the local data path in `src/Similari
 ```java
 // Modify this line to point to your local dataset directory
 String directoryPath = "C:\\Your\\Path\\To\\Datasets";
-
----
-
-## 🔧 Data Pre-processing: Coordinate Conversion
-
-If your dataset contains raw latitude and longitude coordinates, they must be converted into planar (XY) coordinates using **Mercator Projection** before running the search. This ensures accurate spatial normalization and KDE modeling.
-
-### Using the Converter
-The provided `LatLonToXYConverter.java` performs this transformation. It reads WGS84 coordinates and outputs planar coordinates based on the following projection:
-
-* **X calculation**: $x = \text{longitude} \times R \times \frac{\pi}{180}$
-* **Y calculation**: $y = \ln\left(\tan\left(\frac{90 + \text{latitude}}{360} \times \pi\right)\right) \times R$
-*(Where $R = 6,378,137.0$ meters is the WGS84 semi-major axis)*
-
-### How to Use:
-1. **Locate the Code**: Find `LatLonToXYConverter.java` in the source folder.
 2. **Set Paths**: Update the `inputDirectoryPath` and `outputDirectoryPath` variables in the `main` method to match your local folders.
    ```java
    String inputDirectoryPath = "C:\\path\\to\\your\\latlon_data";
