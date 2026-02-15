@@ -24,9 +24,9 @@ The system's performance is governed by several key parameters defined in the `T
 
 | Parameter | Meaning | Default Value |
 | :--- | :--- | :--- |
-| `θ` (theta) | Grid resolution parameter ($2^\theta \times 2^\theta$) | 7 |
-| `α` (alpha) | Bandwidth-density sensitivity parameter | 0.2 |
-| `λ` (lamda) | Filtering threshold parameter for HBT-index | 0.6 |
+| `θ`  | Grid resolution parameter ($2^\theta \times 2^\theta$) | 7 |
+| `α`  | Bandwidth-density sensitivity parameter | 0.2 |
+| `λ`  | Filtering threshold parameter for HBT-index | 0.6 |
 | `k` | Number of top similar datasets to return | 5 |
 
 ### 2. Dataset Repositories
