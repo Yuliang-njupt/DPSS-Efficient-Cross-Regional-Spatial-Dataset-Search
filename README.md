@@ -1,18 +1,19 @@
 # DPSS-Efficient-Cross-Regional-Spatial-Dataset-Search
 
-This repository contains the code for the paper **"Efficient Cross-Regional Spatial Dataset Search with Kernel Density Estimation"**. [cite_start]This research proposes a dataset retrieval scheme aimed at addressing the challenge of discovering datasets with similar distribution patterns in cross-regional scenarios[cite: 8].
+This repository contains the code for the paper **"Efficient Cross-Regional Spatial Dataset Search with Kernel Density Estimation"**. This research proposes a dataset retrieval scheme aimed at addressing the challenge of discovering datasets with similar distribution patterns in cross-regional scenarios.
 
 ## 🖼️ System Overview
 
-[cite_start]The following figure illustrates the DPSS+ framework, which is bifurcated into an offline processing stage for repository indexing and an online query stage for rapid similarity retrieval[cite: 53].
+The following figure illustrates the DPSS+ framework, which is bifurcated into an offline processing stage for repository indexing and an online query stage for rapid similarity retrieval.
 
-![System Architecture](figure2.png) 
+![System Architecture](figure2.png) ![Uploading overview.png…]()
 
-* [cite_start]**(a) Data Modeling**: Raw spatial points are normalized to mitigate geographic offsets and transformed into continuous probability fields using Kernel Density Estimation (KDE)[cite: 49, 183].
-* [cite_start]**(b) Dimension Reduction**: Grid cells are mapped to a one-dimensional sequence using Hilbert curves to preserve spatial locality[cite: 154, 321].
-* [cite_start]**(c) Index Construction**: A balanced binary search tree (HBT-index) is built based on Hilbert-compressed representations[cite: 328, 329].
-* [cite_start]**(d) Coarse-grained Filtering**: Chebyshev’s inequality is used to prune dissimilar candidates efficiently by calculating potential upper and lower bounds[cite: 320, 330].
-* [cite_start]**(e) Fine-grained Matching**: The Jensen-Shannon Divergence (JSD) is calculated for the remaining candidates to find the Top-k results[cite: 165, 250].
+
+* **(a) Data Modeling**: Raw spatial points are normalized to mitigate geographic offsets and transformed into continuous probability fields using Kernel Density Estimation (KDE).
+* **(b) Dimension Reduction**: Grid cells are mapped to a one-dimensional sequence using Hilbert curves to preserve spatial locality.
+* **(c) Index Construction**: A balanced binary search tree (HBT-index) is built based on Hilbert-compressed representations.
+* **(d) Coarse-grained Filtering**: Chebyshev’s inequality is used to prune dissimilar candidates efficiently by calculating potential upper and lower bounds.
+* **(e) Fine-grained Matching**: The Jensen-Shannon Divergence (JSD) is calculated for the remaining candidates to find the Top-k results.
 
 ---
 
@@ -30,9 +31,9 @@ The system's performance is governed by several key parameters defined in the `T
 
 ### 2. Dataset Repositories
 The experiments are conducted on three real-world repositories:
-* [cite_start]**Identifiable**: Precise addresses of buildings and POIs[cite: 393].
-* [cite_start]**Public**: Large-scale public geographic databases[cite: 393].
-* [cite_start]**Trackable**: GPS trajectories of mobile targets[cite: 393].
+* **Identifiable**: Precise addresses of buildings and POIs.
+* **Public**: Large-scale public geographic databases.
+* **Trackable**: GPS trajectories of mobile targets.
 
 ---
 
